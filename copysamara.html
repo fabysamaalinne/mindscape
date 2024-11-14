@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINDSCAPE - Bem Estar e Saúde Mental</title>
+    <style>
+        /* Resetando margens e paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Corpo da página */
+        body {
+            background-color: #f8f0f8;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('https://source.unsplash.com/1600x900/?wellness,mental-health');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 0; /* Sem espaço superior */
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #6f4f9f, #f39c9c);
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            color: #e1c6ff;
+        }
+
+        /* Estilo das seções */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        #home {
+            background: #f1d9c6;
+        }
+
+        #home h2 {
+            color: #6f4f9f;
+        }
+
+        #playlist, #atendimento, #questionario, #centros, #cronograma {
+            background-color: #f1d9c6;
+            margin-top: 40px;
+        }
+
+        /* Botões */
+        .cta-button {
+            display: inline-block;
+            background-color: #f39c9c;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .cta-button:hover {
+            background-color: #6f4f9f;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #6f4f9f;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer .parcerias img {
+            max-width: 100px;
+            margin: 0 15px;
+        }
+
+        footer p {
+            margin-top: 20px;
+        }
+
+        footer .parcerias {
+            margin-bottom: 20px;
+        }
+
+        footer .parcerias img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s;
+        }
+
+        /* Formulário de Questionário */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #6f4f9f;
+        }
+
+        form input[type="text"], form input[type="email"], form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        form button {
+            background-color: #6f4f9f;
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #f39c9c;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .cronograma 
+            
+            {
+                flex-direction: column;
+                align-items: center;
+
+}
+
+.cronograma div {
+                width: 80%;
+            }
+
+            #playlist iframe {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header nav ul li {
+                margin: 8px 0;
+            }
+
+            .cta-button {
+                font-size: 1em;
+            }
+
+            footer .parcerias img {
+                max-width: 80px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>MINDSCAPE</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="playlist.html">Playlists Relaxantes</a></li>
+                <li><a href="#atendimento">Atendimento</a></li>
+                <li><a href="#questionario">Questionário</a></li>
+                <li><a href="#centros">Centros de Atendimento</a></li>
+                <li><a href="#cronograma">Cronograma</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+        <h2>Bem-vindo ao MINDSCAPE</h2>
+        <p>O seu espaço de acolhimento e cuidado para o bem-estar e saúde mental.</p>
+        <a href="playlist.html" class="cta-button">Descubra Playlists Relaxantes</a>
+    </section>
+
+    <!-- Playlist Relaxantes -->
+    <section id="playlist">
+        <h2>Playlist Relaxante</h2>
+        <p>Relaxe com músicas e sons terapêuticos selecionados especialmente para você.</p>
+        <iframe src="https://www.youtube.com/embed/pWjmpSD-ph0?si=yqrpLx8oyvVX2X2t&amp;start=22" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <!-- Atendimento ao Cliente -->
+    <section id="atendimento">
+        <h2>Atendimento ao Cliente</h2>
+        <p>Encontre psicólogos online para atendimento imediato:</p>
+        <ul>
+            <li><a href="https://www.psicologiaviva.com.br" target="_blank">Psicologia Viva</a></li>
+            <li><a href="https://mapasaudemental.com.br/" target="_blank">Saúde Mental Online</a></li>
+            <li><a href="https://drconsulta.com/servicos/consultas/psicologia" target="_blank">Consulta Psicológica</a></li>
+        </ul>
+    </section>
+
+
+    <!-- Questionário -->
+    <section id="questionario">
+        <h2>Questionário de Bem-estar</h2>
+        <div>
+            <li><a href="copyduda.html" target="_blank">Questionário do Cliente</a></li>
+        </div>
+    </section>
+
+    <!-- Centros de Atendimento -->
+    <section id="centros">
+        <h2>Centros de Atendimento</h2>
+        <p>Encontre os melhores centros de atendimento para cuidados com a saúde mental:</p>
+        <ul>
+            <div>
+            <li><a href="copyalinne.html" target="_blank">Centro de Atendimento Lucy (IA)</a></li>
+        </div>
+
+           <div>
+            <li><a href="https://www.fesaude.niteroi.rj.gov.br/sua-saude/dia-mundial-da-saude-mental-aprenda-a-cuidar-de-voce" target="_blank">Cuidados Mentais</a></li>
+        </div>
+
+        <div>
+            <li><a href="https://www.vittude.com/" target="_blank">Atendimento Psicológico ABC</a></li>
+        </div>
+        
+        </ul>
+    </section>
+
+
+
+<!-- Cronograma Alimentar e de Exercícios -->
+<section id="cronograma">
+    <h1>Cronograma Alimentar e Exercícios</h1>
+    <div class="cronograma">
+        <div>
+            <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwihjNqcidqJAxWYle4BHdwoFaoYABACGgJkeg&co=1&ase=2&gclid=EAIaIQobChMIoYzanInaiQMVmJXuAR3cKBWqEAAYAiAAEgJTRfD_BwE&ohost=www.google.com&cid=CAASJeRoB9oumSoaP47489NH2_uM27J5NjjUgbXfe-Z7vXjAsruibvI&sig=AOD64_3X1A2Egrwl0BoAfoa_AXBLBlhcqw&q&nis=4&adurl&ved=2ahUKEwiZyNGcidqJAxU6lZUCHVKrGO0Q0Qx6BAgJEAE" target="_blank">Cronograma Alimentar</a></li>
+        </div>
+        <div>
+            <h2>Cronograma de Exercícios</h2>
+            <li><a href="https://blog.sabin.com.br/autocuidado/como-montar-um-cronograma-de-exercicios-fisicos/" target="_blank">Cronograma de Exercicios fisicos</a></li>
+        </div>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer>
+    <div class="parcerias">
+        <a href="https://banco.bradesco/"><img src="bradesco.png" style="width: 130px;"height="100px" alt="Bradesco" class="media-object  img-responsive img-thumbnail"></a>
+         <a href="https://www.youtube.com/"><img src="Youtube.png" style="width: 130px;"height="100px" alt="YouTube" class="media-object  img-responsive img-thumbnail"></a>
+         <a href="https://www.headspace.com/"><img src="headspace.png" style="width: 130px;"height="100px" alt="Headspace" class="media-object  img-responsive img-thumbnail"></a>
+         <a href="https://www.nutricaoatevoce.com.br/marcas/sundown"><img src="sunsun.jpg" style="width: 130px;"height="100px" alt="Sundown" class="media-object  img-responsive img-thumbnail"></a>
+         <a href="https://senaies.com.br/"><img src="senai.jpg" style="width: 130px;"height="100px" alt="Senai" class="media-object  img-responsive img-thumbnail"></a>
+         <a href="https://www.apple.com/br/iphone/"><img src="iphone.png" style="width: 130px;"height="100px" alt="Iphone" class="media-object  img-responsive img-thumbnail"></a>
+       
+    </div>
+    <p>&copy; 2024 MINDSCAPE. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
